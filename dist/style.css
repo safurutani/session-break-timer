@@ -1,0 +1,87 @@
+:root {
+  --purple:#9B80C1;
+  --bright-purple: #A57CE4;
+  --white: #FEFEDF;
+  --beige: #D5CABD;    
+  --green: #00C9A7;
+  --light-purple: #D2B5FA;
+  --dark-purple: #2C1950;
+}
+body {
+  background: var(--dark-purple);
+  text-align: center;
+  color: var(--white);
+  font-family: "Titillium Web";
+  width: 100%;
+  margin: auto;
+  margin-top: 15%;
+}
+.flex {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+}
+.flex > div {
+  width: 40%;
+}
+#timer {
+  width: 300px;
+  padding: 12px 0;
+  margin: auto;
+  background: var(--purple);
+  border-radius: 15px;
+}
+#time-left {
+  font-size: 58px;
+}
+#timer-label {
+  font-size: 42px;
+}
+#timer-controls {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+}
+#start_stop, #reset {
+  padding: 6px;
+  background: var(--green);
+  border-radius: 5px;
+  padding: 10px;
+  width: 60px;
+}
+#parameters {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  margin: auto;
+}
+#session-label, #break-label {
+  padding: 12px;
+  margin: 20px;
+  background: var(--purple);
+  border-radius: 15px;
+  width: 200px;
+}
+#session-controls, #break-controls {
+  display: flex;
+  width: 200px;
+  margin-top: 10px;
+}
+#break-decrement, #break-increment, #session-decrement, #session-increment {
+  background: var(--green);
+  width: 20%;
+  border-radius: 5px;
+  padding: 2px;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 490px) {
+  #parameters {
+    display: block;
+  }
+  #session-label, #break-label {
+    margin: 20px auto;
+  }
+}
